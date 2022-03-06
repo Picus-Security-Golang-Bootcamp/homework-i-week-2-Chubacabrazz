@@ -5,7 +5,7 @@ This small app can print all books in the list and also search them by name.
 
 
 ### Build With
-::marker Go
+Go
 
 ## How to use
 
