@@ -6,21 +6,21 @@ import (
 	"strings"
 )
 
-var kitaplar = []string{
+var book = []string{
 	"Lord Of The Rings",
 	"Harry Potter",
 	"Dune",
 	"Witcher"}
 
 func List() {
-	for _, b := range kitaplar {
+	for _, b := range book {
 		fmt.Println(b)
 	}
 }
 func Search(k string) {
 	var v string
 	succ := 0 //succ for checking if we have the book, if it stays at 0 that means we don't have it.
-	for _, v = range kitaplar {
+	for _, v = range book {
 		if strings.EqualFold(k, v) { // strings.EqualFold for case insensitive search.
 			fmt.Printf("Success, we have %s", v)
 			succ++
